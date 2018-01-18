@@ -1,7 +1,6 @@
 import { Controller } from "egg";
-const Model = require('../../mocks/article/list');
+import * as Model from '../../mocks/article/list';
 export default class AppController extends Controller {
-    
   async index() {
     const { ctx } = this;
     await ctx.render('app/app.js', { url: this.ctx.url.replace(/\/app/, '')});

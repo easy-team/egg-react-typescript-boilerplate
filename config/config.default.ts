@@ -1,8 +1,8 @@
 import * as path from 'path';
 import * as fs from 'fs';
 import { EggAppConfig } from 'egg';
-export default function (app : EggAppConfig) {
-  const exports : any= {};
+export default function(app: EggAppConfig) {
+  const exports: any = {};
 
   exports.siteFile = {
     '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
@@ -21,8 +21,8 @@ export default function (app : EggAppConfig) {
   exports.keys = '123456';
 
   exports.middleware = [
-    'access'
+    // 'access'
   ];
 
   return exports;
-};
+}

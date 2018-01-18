@@ -7,12 +7,7 @@ import HomeController from './controller/home/home';
 import RouterController from './controller/router/router';
 import SPAController from './controller/spa/spa';
 
-
 declare module 'egg' {
-  export interface Application {
-    
-  }
-
   export interface IController {
     about: {
       about: AboutController
@@ -37,11 +32,7 @@ declare module 'egg' {
     },
     spa: {
       spa: SPAController
-    }
+    },
   }
-
-  export interface IService {
-  }
-
-  function startCluster(options: any)
+  function startCluster(options: any);
 }

@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "tsc": "tsc -p tsconfig.json",
@@ -13,9 +13,7 @@
     "start": "NODE_ENV=production EGG_SERVER_ENV=prod node index.js",
     "start:test": "cross-env EGG_SERVER_ENV=test node index.js",
     "start:prod": "cross-env EGG_SERVER_ENV=prod node index.js",
-    "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
-    "lint": "tslint .",
-    "fix": "tslint --fix ."
+    "kill-port": "easy kill"
   },
   "dependencies": {
     "egg": "^2.1.0",
@@ -76,6 +74,8 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "ts-loader": "^3.2.0",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.5.3",
     "typescript": "^2.6.2",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "vconsole": "^3.0.0",

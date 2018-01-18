@@ -1,18 +1,18 @@
 import { Controller } from 'egg';
 export default class SPAController extends Controller {
 
-  async client() {
+  public async client() {
     const { ctx } = this;
     await ctx.renderClient('spa/client.js', {});
   }
 
-  async redux() {
+  public async redux() {
     const { ctx } = this;
     await ctx.renderClient('spa/redux.js', {});
   }
 
-  async ssr() {
+  public async ssr() {
     const { ctx } = this;
     await ctx.render('spa/ssr.js', { url: ctx.url });
   }
-};
+}

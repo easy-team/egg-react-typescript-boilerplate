@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "space-before-function-paren": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "trailing-comma": false,
+        "quotemark": [true, "single", "jsx-double"],
+        "eofline": false
+    },
+    "rulesDirectory": ["app", "config"]
+}

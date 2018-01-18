@@ -1,19 +1,21 @@
 'use strict';
 import { Controller } from 'egg';
 export default class HelloController extends Controller {
-  async element() {
+  public async element() {
     const { ctx } = this;
     await ctx.render('hello/element.js', {
-      title:'--react server side render--',
-      keywords:'react, server side render',
-      message: { text: 'react server side render for element!'}});
+      title: '--react server side render--',
+      keywords: 'react, server side render',
+      message: { text: 'react server side render for element!' }
+    });
   }
 
-  async component() {
+  public async component() {
     const { ctx } = this;
     await ctx.render('hello/component.js', {
-      title:'--react server side render--',
-      keywords:'react, server side render',
-      message: { text: 'react server side render for component!'}});
+      title: '--react server side render--',
+      keywords: 'react, server side render',
+      message: { text: 'react server side render for component!' }
+    });
   }
-};
+}

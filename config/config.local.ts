@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as ip from 'ip';
 module.exports = () => {
-  const exports : any= {};
+  const exports: any = {};
 
   exports.static = {
     maxAge: 0 // maxAge 缓存，默认 1 年

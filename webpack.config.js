@@ -12,8 +12,8 @@ module.exports = {
     ],
     exclude: ['app/web/page/test'],
     loader: {
-      client: 'app/web/framework/entry/client-loader.js',
-      server: 'app/web/framework/entry/server-loader.js'
+      client: 'app/web/framework/entry/client-loader.ts',
+      server: 'app/web/framework/entry/server-loader.ts'
     }
   },
   alias: {

@@ -10,7 +10,7 @@
     "build:test": "cross-env npm run tsc && easywebpack build test",
     "build:prod": "cross-env npm run tsc && easywebpack build prod",
     "dev": "npm run tsc:w & node index.js",
-    "start": "NODE_ENV=production EGG_SERVER_ENV=prod node index.js",
+    "start": "cross-env NODE_ENV=production EGG_SERVER_ENV=prod node index.js",
     "start:test": "cross-env EGG_SERVER_ENV=test node index.js",
     "start:prod": "cross-env EGG_SERVER_ENV=prod node index.js",
     "kill-port": "easy kill"

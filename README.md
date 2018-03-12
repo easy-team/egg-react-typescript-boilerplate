@@ -1,12 +1,12 @@
 # egg-react-typescript-boilerplate
 
-基于 Egg + React + TypeScript + Webpack3 多页面和单页面服务端客户端渲染同构工程骨架项目.
+基于 Egg + React + TypeScript + Webpack3 多页面和单页面服务端客户端渲染同构工程骨架项目, Webpack3 构建请见 [webpack3](https://github.com/hubcarl/egg-react-typescript-boilerplate/tree/webpack3) 分支.
 
 ## 1. 版本
 
 - Egg 版本： ^2.x.x
 - Node 版本: Node ^8.x.x+,
-- Webpack 版本: ^3.10.1
+- Webpack 版本: ^4.x.x
 - React 版本: ^16.0.0
 - TypeScript: ^2.6.2
 
@@ -47,10 +47,9 @@
 
 ```bash
 npm install
-npm start
 ```
 
-#### 5.2 启动应用
+#### 5.2 本地启动应用
 
 首次运行请先运行一次 `npm run tsc`
 

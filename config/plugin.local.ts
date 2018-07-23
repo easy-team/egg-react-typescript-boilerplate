@@ -1,14 +1,11 @@
-exports.cors = {
-  enable: true,
-  package: 'egg-cors'
-};
-
-exports.webpack = {
-  enable: true,
-  package: 'egg-webpack'
-};
-
-exports.webpackreact = {
-  enable: true,
-  package: 'egg-webpack-react'
+export default {
+  cors: {
+    package: 'egg-cors'
+  },
+  webpack: {
+    package: 'egg-webpack'
+  },
+  webpackreact : {
+    package: 'egg-webpack-react'
+  }
 };

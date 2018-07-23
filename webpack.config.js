@@ -30,7 +30,7 @@ module.exports = {
     typescript: true
   },
   plugins: {
-
+    imagemini: false
   },
 
   done() {

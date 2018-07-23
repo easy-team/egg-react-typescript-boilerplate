@@ -1,6 +1,5 @@
-exports.static = true;
-
-exports.reactssr = {
-  enable: true,
-  package: 'egg-view-react-ssr'
+export default {
+  reactssr: {
+    package: 'egg-view-react-ssr'
+  }
 };

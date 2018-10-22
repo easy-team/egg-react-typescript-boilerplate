@@ -1,6 +1,7 @@
 // This file was auto created by egg-ts-helper
 // Do not modify this file!!!!!!!!!
 
+import 'egg'; // Make sure ts to import egg declaration at first
 import AboutAbout from '../../../app/controller/about/about';
 import AntAnt from '../../../app/controller/ant/ant';
 import AppApp from '../../../app/controller/app/app';

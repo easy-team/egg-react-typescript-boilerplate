@@ -24,5 +24,9 @@ export default function(app: EggAppConfig) {
     // 'access'
   ];
 
+  exports.reactssr = {
+    layout: path.join(app.baseDir, 'app/web/view/layout.html')
+  };
+
   return exports;
 }

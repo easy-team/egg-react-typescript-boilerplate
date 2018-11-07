@@ -14,12 +14,16 @@ tmp/
 *tmp
 _site
 logs
-app/**/*.js
+app/controller/**/*.js
+app/middleware/**/*.js
+app/mocks/**/*.js
+app/router.js
 config/**/*.js
 index.js
 config/buildConfig.json
 config/manifest.json
 app/view/*
+!app/web/**/*.js
 !app/view/layout.html
 !app/view/README.md
 !app/view/.gitkeep

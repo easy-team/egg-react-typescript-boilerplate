@@ -1,4 +1,4 @@
-import reducers from 'component/spa/ssr/reducers';
+import reducers from './reducers';
 import { routerReducer, syncHistoryWithStore } from 'react-router-redux';
 import { combineReducers, createStore } from 'redux';
 

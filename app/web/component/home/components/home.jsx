@@ -1,4 +1,4 @@
-import { add, del } from 'component/spa/ssr/actions';
+import { add, del } from '../actions';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -40,7 +40,6 @@ render() {
       url: 'https://github.com/hubcarl/egg-react-webpack-boilerplate'
     };
     return <div className="redux-nav-item">
-      <h3>SPA Server Side</h3>
       <div className="container">
         <div className="row row-offcanvas row-offcanvas-right">
           <div className="col-xs-12 col-sm-9">

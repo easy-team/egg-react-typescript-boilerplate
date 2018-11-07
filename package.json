@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "start": "egg-scripts start",
@@ -41,7 +41,6 @@
     "@types/react-dom": "^16.0.3",
     "antd": "^3.0.3",
     "autod-egg": "^1.0.0",
-    "babel-preset-react": "^6.24.1",
     "easywebpack-cli": "^4.0.0",
     "easywebpack-react": "^4.0.0",
     "egg-bin": "^4.7.1",

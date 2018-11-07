@@ -1,29 +1,9 @@
-const path = require('path');
+'use strict';
+// https://www.yuque.com/easy-team/egg-react/config
 module.exports = {
-  egg: true,
-  framework: 'react',
-  devtool: 'source-map',
+  devtool: 'eval',
   entry: {
-    include: ['app/web/page',
-      { layout: 'app/web/framework/layout/layout.jsx?loader=false' },
-      { 'spa/redux': 'app/web/page/spa/redux.jsx?loader=false' },
-      { 'spa/client': 'app/web/page/spa/client.jsx?loader=false' },
-      { 'spa/ssr': 'app/web/page/spa/ssr.jsx?loader=false' }
-    ],
-    exclude: ['app/web/page/test'],
-    loader: {
-      client: 'app/web/framework/entry/client-loader.ts',
-      server: 'app/web/framework/entry/server-loader.ts'
-    }
-  },
-  alias: {
-    asset: 'app/web/asset',
-    component: 'app/web/component',
-    framework: 'app/web/framework',
-    store: 'app/web/store'
-  },
-  cssModule: {
-    include: 'app/web/page/css/module'
+    home: 'app/web/page/home/index.js' // 注意 entry js 和 jsx 的区别 https://www.yuque.com/easy-team/egg-react/config
   },
   dll: ['react', 'react-dom'],
   loaders: {
@@ -32,7 +12,6 @@ module.exports = {
   plugins: {
     imagemini: false
   },
-
   done() {
     console.log('---webpack compile finish---');
   }

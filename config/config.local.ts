@@ -5,6 +5,10 @@ import * as path from 'path';
 export default (app: EggAppConfig) => {
   const config: any = {};
 
+  config.view = {
+    cache: 0
+  };
+
   config.static = {
     maxAge: 0 // maxAge 缓存，默认 1 年
   };

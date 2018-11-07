@@ -27,14 +27,18 @@
   height: 100%;
   box-sizing: border-box;
   width: 1140px;
-  padding: 0 30px;
   margin: 0 auto;
 }
 
 .header h1 {
   float: left;
   font-size: 32px;
-  font-weight: 400
+  font-weight: 400;
+  height: 80px;
+  vertical-align: middle;
+  margin: auto auto;
+  line-height: 80px;
+  color: white;
 }
 
 .header h1 a {

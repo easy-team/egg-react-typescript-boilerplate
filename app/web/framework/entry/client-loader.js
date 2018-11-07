@@ -7,8 +7,7 @@ module.exports = function() {
     import Entry from '${this.resourcePath.replace(/\\/g, '\\\\')}';
     const state = window.__INITIAL_STATE__;
     const render = (App)=>{
-      ReactDom.hydrate(EASY_ENV_IS_DEV ? <AppContainer><App {...state} /></AppContainer> : 
-        <App {...state} />, document.getElementById('app'));
+      ReactDom.hydrate(EASY_ENV_IS_DEV ? <AppContainer><App {...state} /></AppContainer> : <App {...state} />, document.getElementById('app'));
     };
 
     if (EASY_ENV_IS_DEV && module.hot) {

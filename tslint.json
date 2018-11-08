@@ -1,16 +1,25 @@
 {
-    "defaultSeverity": "warning",
+    "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+      "tslint:recommended"
     ],
     "jsRules": {},
     "rules": {
-        "space-before-function-paren": false,
-        "ordered-imports": false,
-        "object-literal-sort-keys": false,
-        "trailing-comma": false,
-        "quotemark": [true, "single", "jsx-double"],
-        "eofline": false
+      "member-access": false, 
+      "ordered-imports": false,
+      "trailing-comma": false,
+      "quotemark": [true, "single", "jsx-double"],
+      "eofline": false,
+      "object-literal-sort-keys": false,
+      "interface-name": false,
+      "arrow-parens": false,
+      "no-console": false,
+      "max-line-length": false,
+      "only-arrow-functions": false,
+      "max-classes-per-file": [true, 3, "exclude-class-expressions"]
     },
-    "rulesDirectory": ["app", "config"]
-}
+    "paths": {
+      "component": "app/web/component"
+    },
+    "rulesDirectory": ["app"]
+  }

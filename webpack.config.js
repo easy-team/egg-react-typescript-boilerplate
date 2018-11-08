@@ -1,12 +1,28 @@
 'use strict';
 // https://www.yuque.com/easy-team/egg-react/config
+const path = require('path');
+const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   devtool: 'eval',
   entry: {
-    home: 'app/web/page/home/index.js' // 注意 entry js 和 jsx 的区别 https://www.yuque.com/easy-team/egg-react/config
+    home: 'app/web/page/home/index.tsx'
   },
-  dll: ['react', 'react-dom'],
+  lib: ['react', 'react-dom'],
   loaders: {
+    babel: {
+      include: [resolve('app/web'), resolve('node_modules')]
+    },
+    less: {
+      include: [resolve('app/web'), resolve('node_modules')],
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': 'red',
+          'link-color': '#1DA57A',
+          'border-radius-base': '2px'
+        }
+      }
+    },
     typescript: true
   },
   plugins: {

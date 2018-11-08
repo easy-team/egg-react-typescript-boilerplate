@@ -1,12 +1,23 @@
 {
   "extends": "../../config/tsconfig.json",
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "preserve",
+    "target": "es5",      
+    "module": "esnext",
+    "sourceMap": true,
     "lib": [
       "es6",
-      "dom"
+      "dom",
+      "es2017",
+      "esnext"
     ]
   },
+  "files": [
+    "./typings/global.d.ts"
+  ],
+  "include": [
+    "./page/**/**.tsx",
+  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"

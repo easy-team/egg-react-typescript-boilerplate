@@ -1,6 +1,6 @@
 # egg-react-typescript-boilerplate
 
-基于 Egg + React + TypeScript + Webpack4 多页面和单页面服务端客户端渲染同构工程骨架项目, Webpack3 构建请见 [webpack3](https://github.com/hubcarl/egg-react-typescript-boilerplate/tree/webpack3) 分支.
+基于 Egg + React + TypeScript + Webpack 同构工程骨架
 
 ## 1. 版本
 
@@ -8,12 +8,12 @@
 - Node 版本: Node ^8.x.x+,
 - Webpack 版本: ^4.x.x
 - React 版本: ^16.0.0
-- TypeScript: ^2.6.2
+- TypeScript: ^3.0.0
 
 ## 2. 文档
 
 - http://hubcarl.github.io/easywebpack/react
-- https://zhuanlan.zhihu.com/easywebpack
+- https://www.yuque.com/easy-team/egg-react
 
 
 ## 3. 特性
@@ -51,16 +51,11 @@ npm install
 
 #### 5.2 本地启动应用
 
-首次运行请先运行一次 `npm run tsc`
-
 ```bash
 npm run dev
 ```
 
 应用访问: http://127.0.0.1:7001
-
-![npm start启动](https://github.com/hubcarl/egg-vue-webpack-boilerplate/blob/master/docs/images/webpack-build.png)
-
 
 #### 5.3 构建文件
 
@@ -75,8 +70,6 @@ npm run tsc
 ```bash
 npm run build
 ```
-
-当在本地运行了 `npm run tsc` 之后，本地开发时，记得 `npm run clean` 清楚 js 文件。
 
 #### 5.4 打包部署
 

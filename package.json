@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "start": "egg-scripts start",
@@ -21,7 +21,7 @@
     "egg-logger": "^1.5.0",
     "egg-scripts": "^2.6.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.1.0",
+    "egg-view-react-ssr": "^2.3.2",
     "extend": "~3.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
@@ -29,11 +29,11 @@
     "moment": "^2.17.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-router": "^4.2.0",
     "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
-    "react-router-config": "^1.0.0-beta.4",
     "redux": "^3.7.2"
   },
   "devDependencies": {
@@ -50,19 +50,13 @@
     "eslint": "^4.6.1",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "history": "^4.7.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
-    "node-sass": "^4.6.0",
-    "sass-loader": "^6.0.6",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "ts-loader": "^4.0.0",
     "tslint": "^5.9.1",
     "tslint-loader": "^3.5.3",
-    "typescript": "^2.6.2",
-    "vconsole": "^3.0.0"
+    "typescript": "^3.0.0"
   },
   "egg": {
     "typescript": true

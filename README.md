@@ -18,20 +18,13 @@
 
 ## 3. 特性
 
-- 支持 Egg Node 端代码 和 前端代码 TypeScript 编写和构建
+- 支持 Egg Node 端代码和前端代码 TypeScript 编写和构建
 
-- 支持 async 和 await 特性, Controller 采用 class 方式编写
+- 支持 AntD 按需加载和主题配置功能
 
 - 支持 server 和 client 端代码修改, Webpack 时时编译和热更新, `npm run dev` 一键启动应用
 
-- 基于 react + react-router + react-redux 单页面服务器客户端同构实现
-
 - 支持开发环境, 测试环境，正式环境 Webpack 编译
-
-- 支持 js/css/image 资源依赖, 内置支持CDN特性
-
-- 支持 Webpack DLL 自动化构建
-
  
 
 ## 4. 依赖

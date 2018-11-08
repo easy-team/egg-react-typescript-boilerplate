@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-export default class Layout extends Component {
+export default class Layout extends Component<any> {
   render() {
     return <html>
       <head>

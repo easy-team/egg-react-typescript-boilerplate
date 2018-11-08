@@ -5,7 +5,7 @@ export default class HomeController extends Controller {
     await ctx.render('home.js', {
       title: '--Ant Design Tab--',
       keywords: 'react, server side render, ant design',
-      message: { text: 'Ant Design Tab' }
+      message: { text: 'Ant Design Tab Theme and Code Spliting' }
     });
   }
 }

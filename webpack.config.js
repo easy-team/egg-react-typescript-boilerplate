@@ -5,7 +5,7 @@ const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   devtool: 'eval',
   entry: {
-    home: 'app/web/page/home/index.jsx' // 注意 entry js 和 jsx 的区别 https://www.yuque.com/easy-team/egg-react/config
+    home: 'app/web/page/home/index.tsx'
   },
   lib: ['react', 'react-dom'],
   loaders: {
@@ -22,7 +22,8 @@ module.exports = {
           'border-radius-base': '2px'
         }
       }
-    }
+    },
+    typescript: true
   },
   plugins: {
     imagemini: false

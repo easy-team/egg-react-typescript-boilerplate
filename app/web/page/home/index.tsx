@@ -5,10 +5,17 @@ import { AppContainer } from 'react-hot-loader';
 import Layout from '../../framework/layout';
 // https://github.com/gaearon/react-hot-loader/issues/525
 import { Tab } from './component/tab';
+import { TabProps } from '../../framework/type';
+
+class App extends Component<TabProps, any> {
+  render() {
+    return <Layout {...this.props}><Tab {...this.props} /></Layout>;
+  }
+}
 
 function bootstrap() {
   if (EASY_ENV_IS_NODE) {
-    return props => <Layout {...props}><Tab {...props} /></Layout>;
+    return App;
   }
   const state = window.__INITIAL_STATE__;
   const root = document.getElementById('app');

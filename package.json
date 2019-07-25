@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "start": "egg-scripts start",

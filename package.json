@@ -59,7 +59,16 @@
     "ts-loader": "^4.0.0",
     "tslint": "^5.9.1",
     "tslint-loader": "^3.5.3",
-    "typescript": "^3.0.0"
+    "typescript": "^3.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0"
   },
   "egg": {
     "typescript": true

@@ -1,6 +1,6 @@
 # egg-react-typescript-boilerplate
 
-基于 Egg + React + TypeScript + Webpack 同构工程骨架
+基于 Egg + React + TypeScript + Webpack 服务端渲染工程骨架
 
 ## 1. 版本
 
@@ -20,7 +20,7 @@
 
 - 支持 Egg Node 端代码和前端代码 TypeScript 编写和构建
 
-- 支持 AntD 按需加载和主题配置功能
+- 支持 AntD 按需加载和主题配置功能以及 MobX 应用
 
 - 支持 server 和 client 端代码修改, Webpack 时时编译和热更新, `npm run dev` 一键启动应用
 

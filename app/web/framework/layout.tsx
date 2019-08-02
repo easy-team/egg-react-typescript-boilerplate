@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { inject } from 'mobx-react';
+
+@inject('config')
 export default class Layout extends Component<any> {
   render() {
+    const { config } = this.props;
+    console.log('>>themeStyle', config.themeStyle);
     return <html>
       <head>
         <title>{this.props.title}</title>
@@ -10,7 +15,7 @@ export default class Layout extends Component<any> {
         <meta name="description" content={this.props.description}></meta>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
       </head>
-      <body><div id="app">{this.props.children}</div></body>
+      <body style={{...config.themeStyle}}><div id="app">{this.props.children}</div></body>
     </html>;
   }
 }

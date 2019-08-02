@@ -3,7 +3,9 @@ import { Tabs } from 'antd';
 import Header from '../../../../component/header/header';
 import { TabProps } from '../../../../framework/type';
 import './index.css';
+
 import MobXApp from '../mobx';
+
 
 const TabPane = Tabs.TabPane;
 const tabItemClick = (key) => {

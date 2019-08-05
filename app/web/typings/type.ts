@@ -1,3 +1,5 @@
+import ConfigStore from '../page/home/store/config';
+
 export interface TabProps {
   title: string;
   keywords: string;
@@ -5,4 +7,8 @@ export interface TabProps {
   message: {
     text: string
   };
+}
+
+export interface StoreProps {
+  configStore?: ConfigStore
 }

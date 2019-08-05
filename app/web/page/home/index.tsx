@@ -7,12 +7,12 @@ import ConfigStore from './store/config';
 import Layout from '../../framework/layout';
 // https://github.com/gaearon/react-hot-loader/issues/525
 import { Tab } from './component/tab';
-import { TabProps } from '../../framework/type';
+import { TabProps } from '../../typings/type';
 
 class App extends Component<TabProps, any> {
   render() {
     const stores = {
-      config: new ConfigStore()
+      configStore: new ConfigStore()
     };
     return <Provider {...stores}><Layout {...this.props}><Tab {...this.props} /></Layout></Provider>;
   }
@@ -24,7 +24,7 @@ function bootstrap() {
     return App;
   }
   const stores = window.stores = window.stores || {
-    config: new ConfigStore()
+    configStore: new ConfigStore()
   };
   const state = window.__INITIAL_STATE__;
   const root = document.getElementById('app');

@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.5
+// This file is created by egg-ts-helper@1.25.6
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -15,6 +15,7 @@ import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
 import 'egg-view-react-ssr';
+import 'egg-view-nunjucks';
 import 'egg-cors';
 import 'egg-webpack';
 import 'egg-webpack-react';
@@ -34,6 +35,7 @@ declare module 'egg' {
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
     reactssr?: EggPluginItem;
+    nunjucks?: EggPluginItem;
     cors?: EggPluginItem;
     webpack?: EggPluginItem;
     webpackreact?: EggPluginItem;

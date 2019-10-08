@@ -1,6 +1,10 @@
-# egg-react-typescript-boilerplate
+# egg-react-typescript-awesome-render-boilerplate
 
-基于 Egg + React + TypeScript + Webpack 服务端渲染工程骨架
+基于 Egg + React + TypeScript + Webpack 多种渲染工程骨架
+
+- React Server Render
+- React Client Render
+- React Nunjucks Render
 
 ## 1. 版本
 

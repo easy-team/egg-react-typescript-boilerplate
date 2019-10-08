@@ -1,10 +1,14 @@
 'use strict';
 // https://www.yuque.com/easy-team/egg-react/config
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   entry: {
-    home: 'app/web/page/home/index.tsx'
+    home: 'app/web/page/home/index.tsx',
+    'react-nunjucks-render': 'app/web/page/react-nunjucks-render/index.tsx',
+    'react-server-render': 'app/web/page/react-server-render/index.tsx',
+    'react-client-render': 'app/web/page/react-client-render/index.tsx'
   },
   module: {
     rules: [
@@ -22,8 +26,15 @@ module.exports = {
         }
       }, 
       {
-        typescript: true
+        ts: true
       }
     ],
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      chunks: ['runtime', 'common', 'react-nunjucks-render'],
+      filename: '../app/view/react-nunjucks-render.tpl',
+      template: './app/web/view/index.tpl'
+    })
+  ]
 };

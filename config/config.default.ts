@@ -8,6 +8,17 @@ export default function(app: EggAppConfig) {
     '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
   };
 
+  exports.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.tpl': 'nunjucks'
+    },
+  };
+
+  exports.reactssr = {
+    layout: path.join(app.baseDir, 'app/web/view/layout.html')
+  };
+  
   exports.logger = {
     consoleLevel: 'DEBUG',
     dir: path.join(app.baseDir, 'logs')

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { Provider, useStaticRendering } from 'mobx-react';
 import ConfigStore from './store/config';
-import Layout from '../../framework/layout';
+import Layout from '../../component/layout';
 // https://github.com/gaearon/react-hot-loader/issues/525
 import { Tab } from './component/tab';
 import { TabProps } from '../../typings/type';

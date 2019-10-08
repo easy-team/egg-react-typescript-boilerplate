@@ -20,8 +20,12 @@ export class Tab extends Component<TabProps, any> {
       <div className="tab">
         <h1>{this.props.message.text}</h1>
         <Tabs defaultActiveKey="1" onChange={tabItemClick}>
-          <TabPane tab="MobX" key="1"><MobXApp /></TabPane>
-          <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
+          <TabPane tab="Awesome Render" key="1">
+            <h1><a href="/ssr">React Server Render</a></h1>
+            <h1><a href="/csr">React Client Render</a></h1>
+            <h1><a href="/nun">React Nunjucks Render</a></h1>
+          </TabPane>
+          <TabPane tab="Mobx-React" key="2"><MobXApp /></TabPane>
           <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
         </Tabs>
       </div>

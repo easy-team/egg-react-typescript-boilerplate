@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import Layout from '../../component/layout.jsx';
 import { CSR } from '../../framework/app';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import Com from './com'
 
-class Index extends Component {
-  componentDidMount() {
-    console.log('client render');
-  }
-  render() {
-    return <h1>{this.props.text}</h1>;
-  }
-}
-
-
-export default CSR(Index);
+// const state = window.__INITIAL_STATE__;
+// const root = document.getElementById('app');
+// if (EASY_ENV_IS_DEV) {
+//   ReactDOM.render(<AppContainer><Com {...state} /></AppContainer>, root);
+//   if (module.hot) {
+//     module.hot.accept();
+//   }
+// } else{
+//   ReactDOM.render(<Com {...state} />, root);
+// }
+// if (module.hot) {
+//   module.hot.accept();
+// }
+CSR(Com);

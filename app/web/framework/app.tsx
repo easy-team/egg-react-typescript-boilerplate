@@ -3,16 +3,13 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 const clientRender = (Com, method) => {
-  console.log('>>>clientRender', method);
+  console.log('>>>__filename', __filename);
   const state = window.__INITIAL_STATE__;
   const root = document.getElementById('app');
   if (EASY_ENV_IS_DEV) {
-    ReactDOM[method](<AppContainer><Com {...state} /></AppContainer>, root);
-    if (module.hot) {
-      module.hot.accept();
-    }
+    ReactDOM.render(<AppContainer><Com {...state} /></AppContainer>, root);
   } else{
-    ReactDOM[method](<Com {...state} />, root);
+    ReactDOM.render(<Com {...state} />, root);
   }
 };
 
@@ -27,5 +24,6 @@ export function SSR(Com) {
 export function CSR(Com) {
   return clientRender(Com, 'render');
 }
+
 
 

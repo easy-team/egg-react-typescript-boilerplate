@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 const clientRender = (Com, method) => {
-  console.log('>>>__filename', __filename);
   const state = window.__INITIAL_STATE__;
   const root = document.getElementById('app');
   if (EASY_ENV_IS_DEV) {
-    ReactDOM.render(<AppContainer><Com {...state} /></AppContainer>, root);
+    module.hot.accept();
+    ReactDOM[method](<AppContainer><Com {...state} /></AppContainer>, root);
   } else{
-    ReactDOM.render(<Com {...state} />, root);
+    ReactDOM[method](<Com {...state} />, root);
   }
 };
 

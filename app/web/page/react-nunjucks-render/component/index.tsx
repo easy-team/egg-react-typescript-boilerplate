@@ -26,6 +26,15 @@ class LocalReactive extends Component {
   } 
 }
 
+@observer
+class Test extends Component {
+
+  render() {
+    return <h2>Test Mobx hot And observer</h2>
+  } 
+}
+
+
 @inject('appStore')
 @observer
 class MobXApp extends Component {
@@ -37,6 +46,7 @@ class MobXApp extends Component {
     const { appStore } = this.props;
     // [mobx] Dynamic observable objects cannot be frozen https://github.com/mobxjs/mobx/blob/master/CHANGELOG.md
     return <div style={{...appStore.style}}>
+        <Test />
         <h3>{appStore.state.text}</h3>
         <div style={{...appStore.style}} onClick={() => { appStore.plus()}}>点我:{appStore.number}</div>
         <LocalReactive></LocalReactive>

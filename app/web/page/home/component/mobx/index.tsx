@@ -22,8 +22,17 @@ class LocalReactive extends Component {
   render() {
     return <div>
         <div style={this.style}>{info.text}</div>
-        <Observer>{() => <div style={this.style} onClick={() => { this.handle()}}>点我:{info.text}</div>}</Observer>
+        <Observer>{() => <div style={this.style} onClick={() => { this.handle()}}>11点我:{info.text}</div>}</Observer>
     </div>
+  } 
+}
+
+
+@observer
+class Test extends Component {
+
+  render() {
+    return <div>Test Mobx hot And observer</div>
   } 
 }
 
@@ -45,4 +54,5 @@ class MobXApp extends Component<StoreProps> {
     </div>
   }
 };
+// hot-reload: https://github.com/mobxjs/mobx-react/issues/500
 export default MobXApp;

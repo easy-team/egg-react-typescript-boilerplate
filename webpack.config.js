@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       chunks: ['runtime', 'common', 'react-nunjucks-render'],
-      filename: '../app/view/react-nunjucks-render.tpl',
+      filename: './react-nunjucks-render.tpl',
       template: './app/web/view/index.tpl'
     })
   ]

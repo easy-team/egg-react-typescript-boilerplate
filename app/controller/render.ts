@@ -12,7 +12,7 @@ export default class ReactController extends Controller {
     const { ctx } = this;
     await ctx.render('react-server-render.js', { 
       title: 'React Server Render',
-      text: 'Egg + React + ypeScript + Webpack Server Side Render' 
+      text: 'Egg + React + TypeScript + Webpack Server Side Render' 
     });
   }
 

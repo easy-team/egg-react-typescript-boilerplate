@@ -23,4 +23,12 @@ export default class ReactController extends Controller {
       text: 'Egg + React + TypeScript + Webpack Client Side Render' 
     });
   }
+
+  public async reactServerRenderStateless() {
+    const { ctx } = this;
+    await ctx.render('stateless.js', { 
+      title: 'React Server Render',
+      text: 'Egg + React + Webpack Server Side Render Stateless Component' 
+    });
+  }
 }

@@ -8,7 +8,8 @@ module.exports = {
     home: 'app/web/page/home/index.tsx',
     'react-nunjucks-render': 'app/web/page/react-nunjucks-render/index.tsx',
     'react-server-render': 'app/web/page/react-server-render/index.tsx',
-    'react-client-render': 'app/web/page/react-client-render/index.tsx'
+    'react-client-render': 'app/web/page/react-client-render/index.tsx',
+    'stateless': 'app/web/page/stateless/index.tsx'
   },
   module: {
     rules: [

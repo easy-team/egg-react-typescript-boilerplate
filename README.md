@@ -12,7 +12,7 @@
 
 ## 2. 文档
 
-- http://hubcarl.github.io/easywebpack/react
+- https://easyjs.cn/egg-react
 - https://www.yuque.com/easy-team/egg-react
 
 

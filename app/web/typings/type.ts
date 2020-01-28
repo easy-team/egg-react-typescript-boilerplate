@@ -1,4 +1,4 @@
-import ConfigStore from '../page/home/store/config';
+import ConfigStore from '../page/antd/store/config';
 
 export interface TabProps {
   title: string;

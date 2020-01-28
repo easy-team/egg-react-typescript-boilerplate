@@ -21,6 +21,7 @@ export default function(app: EggAppConfig) {
   exports.keys = '123456';
 
   exports.middleware = [
+    // 'locals',
     // 'access'
   ];
 

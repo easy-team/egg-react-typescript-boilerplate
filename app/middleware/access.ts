@@ -1,14 +1,16 @@
 import * as path from 'path';
-import * as util from 'path';
-export default function() {
+import * as util from 'util';
+import { Context } from 'egg';
+
+export default function() : any {
   const skipExt = [ '.png', '.jpeg', '.jpg', '.ico', '.gif' ];
-  return async (ctx, next) => {
+  return async (ctx: Context, next: () => Promise<any>) => {
     const start = new Date().getTime();
     await next;
 
     const rs = Math.ceil(new Date().getTime() - start);
 
-    ctx.set('X-Response-Time', rs);
+    ctx.set('X-Response-Time', String(rs));
 
     const ext = path.extname(ctx.url).toLocaleLowerCase();
     const isSkip = skipExt.indexOf(ext) !== -1 && ctx.status < 400;

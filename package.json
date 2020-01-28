@@ -17,28 +17,32 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md  -s"
   },
   "dependencies": {
+    "@hubcarl/json-typescript-mapper": "2.0.0",
+    "axios": "^0.19.2",
     "cross-env": "^5.0.0",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",
     "egg-logger": "^1.5.0",
     "egg-scripts": "^2.6.0",
     "egg-validate": "^1.0.0",
-    "egg-view-react-ssr": "^2.3.2",
-    "extend": "~3.0.0",
-    "history": "^4.7.2",
+    "egg-view-react-ssr": "^3.0.0",
     "lodash": "^4.17.4",
-    "mobx": "^5.13.0",
-    "mobx-react": "^6.1.1",
-    "mockjs": "^1.0.1-beta3",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0",
+    "mobx": "^5.15.3",
+    "mobx-react": "^6.1.4",
     "moment": "^2.17.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-loadable": "^5.5.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "shortid": "^2.2.8",
+    "showdown": "^1.8.6"
   },
   "devDependencies": {
     "@types/react": "^16.0.34",
@@ -50,11 +54,10 @@
     "egg-bin": "^4.7.1",
     "egg-ts-helper": "^1.9.0",
     "egg-webpack": "^4.0.0",
-    "egg-webpack-react": "^2.0.0",
+    "egg-webpack-react": "^3.0.0",
     "eslint": "^4.6.1",
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "imagemin-webpack-plugin": "^2.4.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
@@ -74,9 +77,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hubcarl/egg-react-typescript-boilerplate.git"
+    "url": "git+https://github.com/easy-team/egg-react-typescript-boilerplate.git"
   },
   "author": "hubcarl@126.com",
   "license": "MIT",
-  "homepage": "https://github.com/hubcarl/egg-react-typescript-boilerplate"
+  "homepage": "https://github.com/easy-team/egg-react-typescript-boilerplate"
 }

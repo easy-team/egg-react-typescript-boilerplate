@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs } from 'antd';
-import Header from '../../../../component/header/header';
+import Header from '../../../../component/header';
 import { TabProps } from '../../../../typings/type';
 import './index.css';
 

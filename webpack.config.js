@@ -4,7 +4,8 @@ const path = require('path');
 const resolve = (filepath) => path.resolve(__dirname, filepath);
 module.exports = {
   entry: {
-    home: 'app/web/page/home/index.tsx'
+    blog: 'app/web/page/blog/index.tsx',
+    antd: 'app/web/page/antd/index.tsx',
   },
   module: {
     rules: [
@@ -25,5 +26,8 @@ module.exports = {
         typescript: true
       }
     ],
-  }
+  },
+  plugins:[
+    { imagemini: false }
+  ]
 };

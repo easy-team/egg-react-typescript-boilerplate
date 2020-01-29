@@ -5,7 +5,6 @@ import Condition from '../lib/condition';
 export default class BlogController extends Controller {
 
   public async home(ctx: Context) {
-    ctx.locals.origin = ctx.request.origin;
     await ctx.render('blog.js', { url: ctx.url });
   }
 

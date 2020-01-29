@@ -14,7 +14,7 @@ class Detail extends Component<any, any> {
   render() {
     const { article } = this.props;
     return article ? <div>
-      <h2 className="easy-article-title">{article.title}</h2>
+      <h2 className="easy-article-detail-title">{article.title}</h2>
       <div className="easy-article-info">
         <iframe src={article.url} frameBorder="0" width="100%" style={{minHeight: '800px'}}></iframe>
       </div>

@@ -8,9 +8,9 @@ import Main from './view/main'
 import '../../asset/css/blog.css'
 
 class Entry extends Component {
-  static async asyncData(context) {
+  static async asyncData(locals) {
     const router = createRouter();
-    return asyncData(context, router);
+    return asyncData(locals, router);
   }
 
   render() {

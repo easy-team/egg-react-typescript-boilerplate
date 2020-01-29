@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader/root'
+import { ARTICLE_LIST, ARTICLE_DETAIL } from '../store/constant';
 import Layout from '../../../component/layout'
 import Header from '../../../component/header'
 import Route from '../router/route';
@@ -32,11 +33,11 @@ class Main extends Component {
         <li onClick={this.tabClick.bind(this)}><Link to="/about">About</Link></li>
       </ul>
       <Switch>
-        <Route path="/detail/:id" component={Detail} />
+        <Route type={ARTICLE_DETAIL} path="/detail/:id" component={Detail} />
         <Route path="/example" component={Example}/>
         <Route path="/async" component={Async}/>
         <Route path="/about" component={About}/>
-        <Route path="/" component={Home}/>
+        <Route type={ARTICLE_LIST} path="/" component={Home}/>
       </Switch>
     </Layout>;
   }

@@ -3,17 +3,19 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { updateState } from '../store/actions';
+import { update } from '../store/actions';
 
 class WrapperRoute extends Component<any, any> {
 
   async componentWillReceiveProps(nextProps) {
-    const { locals, component, computedMatch, updateState } = nextProps;
+    const { type, locals, component, computedMatch, updateState } = nextProps;
+    console.log('>>route', computedMatch.url, this.props.computedMatch.url);
     if (computedMatch.url !== this.props.computedMatch.url) {
       const { asyncData } = component;
       if (asyncData) {
         const data = await asyncData(locals, { match: computedMatch });
-        updateState(data);
+        console.log('>>>update', type, data);
+        updateState(type, data);
       }
     }
   }
@@ -31,7 +33,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return { 
-    updateState: data => dispatch(updateState(data))
+    updateState: (type, data) => dispatch(update(type, data))
   };
 };
 

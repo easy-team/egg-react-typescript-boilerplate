@@ -12,7 +12,7 @@ async function asyncData(locals, router) {
     return componentAsyncData instanceof Function ? componentAsyncData(locals, matchRoute) : null;
   });
   const list = await Promise.all(promises);
-  return list.reduce((item, result) => {
+  return list.reduce((item: Object, result : Object) => {
     return { ...result, ...item}
   }, {});
 }
@@ -24,7 +24,7 @@ function bootstrap(Entry) {
     ReactDOM[renderMethod](<Entry />, root);
     if (EASY_ENV_IS_DEV) {
       module.hot.accept(() => {
-        ReactDOM[renderMethod](<RootEntry />, root);
+        ReactDOM[renderMethod](<Entry />, root);
       });
     }
     return;

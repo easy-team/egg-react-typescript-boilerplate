@@ -1,3 +1,4 @@
+import { Route } from 'react-router-dom';
 import Home from './home';
 import Async from './async';
 import Example from './example';

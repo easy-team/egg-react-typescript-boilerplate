@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link }  from 'react-router-dom';
 import request from '../../../framework/request';
-import { add, del } from '../store/actions';
+import { update } from '../store/actions';
+
 import './home.css'
 class Home extends Component<any, any> {
   static async asyncData(context, route) {
@@ -10,7 +11,7 @@ class Home extends Component<any, any> {
   }
 
   render() {
-    const { list } = this.props;
+    const { list = [] } = this.props;
     return <div className="easy-article-list">
       <ul>
         {list.map(function (item) {
@@ -37,4 +38,9 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, { add, del })(Home);
+
+const mapDispatchToProps = dispatch => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

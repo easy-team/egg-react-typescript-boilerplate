@@ -13,7 +13,10 @@ class Example extends Component {
     };
     return <div>
       <h2 style={{...styleTitle}}>Egg React Server Side Render</h2>
-      <h4 style={{...styleSub}}><a href="/antd">AntD + Mobx</a></h4>
+      <h4 style={{...styleSub}}><a target="_blank" href="/demo/node">Node 直接获取数据</a></h4>
+      <h4 style={{...styleSub}}><a target="_blank" href="/demo/async">前端 asyncData 获取数据</a></h4>
+      <h4 style={{...styleSub}}><a target="_blank" href="/antd">AntD + Mobx</a></h4>
+
     </div>;
   }
 }

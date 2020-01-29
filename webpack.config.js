@@ -6,6 +6,8 @@ module.exports = {
   entry: {
     blog: 'app/web/page/blog/index.tsx',
     antd: 'app/web/page/antd/index.tsx',
+    'demo/node': 'app/web/page/demo/node.tsx',
+    'demo/async': 'app/web/page/demo/async.tsx',
   },
   module: {
     rules: [

@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { hot } from 'react-hot-loader/root'
 
 import request from '../../../framework/request';
 
@@ -29,4 +30,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Detail)
+export default connect(mapStateToProps)(EASY_ENV_IS_DEV ? hot(Detail) : Detail)

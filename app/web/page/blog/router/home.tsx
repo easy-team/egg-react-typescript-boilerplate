@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link }  from 'react-router-dom';
+import { hot } from 'react-hot-loader/root'
+
 import request from '../../../framework/request';
-import { update } from '../store/actions';
 
 import './home.css'
 class Home extends Component<any, any> {
@@ -43,4 +44,4 @@ const mapDispatchToProps = dispatch => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(EASY_ENV_IS_DEV ? hot(Home) : Home);

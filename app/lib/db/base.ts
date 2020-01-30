@@ -1,12 +1,15 @@
 'use strict';
 import Condition from '../condition';
+import * as path from 'path';
 import * as shortid from 'shortid';
 import { PlainObject } from 'egg';
+
+const dbpath = path.resolve(__dirname, 'blog.json');
 
 export default class DB {
   public instance: any;
   public name: string;
-  constructor(name: string = 'blog.json') {
+  constructor(name: string = dbpath) {
     this.name = name;
   }
 

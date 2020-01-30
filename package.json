@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "dev": "egg-bin dev -r egg-ts-helper/register",

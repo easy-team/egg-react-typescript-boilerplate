@@ -5,7 +5,7 @@ import Condition from '../lib/condition';
 export default class BlogController extends Controller {
 
   public async home(ctx: Context) {
-    await ctx.render('blog.js', { url: ctx.url });
+    await ctx.render('blog.js', { url: ctx.url })
   }
 
   public async list(ctx: Context) {

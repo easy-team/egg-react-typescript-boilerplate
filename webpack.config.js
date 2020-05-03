@@ -9,6 +9,13 @@ module.exports = {
     'demo/node': 'app/web/page/demo/node.tsx',
     'demo/async': 'app/web/page/demo/async.tsx',
   },
+  resolve: {
+    alias:{
+      '@asset': resolve('app/web/asset'),
+      '@framework': resolve('app/web/framework'),
+      '@component': resolve('app/web/component')
+    }
+  },
   module: {
     rules: [
       {

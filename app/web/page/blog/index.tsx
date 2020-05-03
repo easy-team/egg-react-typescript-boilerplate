@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, StaticRouter } from 'react-router-dom';
-import { asyncData, bootstrap } from '../../framework/app'
-import createStore from './store'
-import createRouter from './router'
-import Main from './view/main'
-import '../../asset/css/blog.css'
+import { asyncData, bootstrap } from '@framework/app';
+import createStore from './store';
+import createRouter from './router';
+import Main from './view/main';
+import '@asset/css/blog.css';
 
 class Entry extends Component {
   static async asyncData(context) {

@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root'
 
-import request from '../../framework/request';
+import request from '@framework/request';
 
 class AsyncMode extends Component<any, any> {
   static async asyncData(locals) {

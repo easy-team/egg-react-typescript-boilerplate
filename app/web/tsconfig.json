@@ -10,7 +10,13 @@
       "dom",
       "es2017",
       "esnext"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@asset/*": ["asset/*"],
+      "@component/*": ["component/*"],
+      "@framework/*": ["framework/*"]
+    }
   },
   "files": [
     "./typings/global.d.ts"

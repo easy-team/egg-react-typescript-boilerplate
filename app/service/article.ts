@@ -10,8 +10,7 @@ export default class ArticeService extends Service {
   constructor(ctx: Context) {
     super(ctx);
     this.context = ctx;
-    this.colllection = new Colllection(ctx.db, 'article')
-    
+    this.colllection = new Colllection(ctx.db, 'article');
   }
 
   public async getArtilceList(condition: Condition) {

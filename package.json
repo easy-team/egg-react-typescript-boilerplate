@@ -16,6 +16,11 @@
     "ii": "npm install --registry https://registry.npm.taobao.org",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md  -s"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "app/**/*.ts,tsx" : [
       "tslint .",

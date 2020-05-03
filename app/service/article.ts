@@ -11,6 +11,7 @@ export default class ArticeService extends Service {
     super(ctx);
     this.context = ctx;
     this.colllection = new Colllection(ctx.db, 'article')
+    
   }
 
   public async getArtilceList(condition: Condition) {

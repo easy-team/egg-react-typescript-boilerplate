@@ -111,10 +111,10 @@ const data = {
   }]
 };
 
-let id = 1;
+let initId = 1;
 
 data.list.forEach(item => {
-  item.id = id++;
+  item.id = initId++;
 });
 
 const total = data.list.length;
@@ -123,7 +123,7 @@ export function getPage(pageIndex = 1, pageSize = 10) {
   const end = start + Number(pageSize);
   return { list: data.list.slice(start, end), total };
 }
-export function getDetail(id) {
+export function getDetail(id: number) {
   return data.list.filter(item => {
     return item.id === id;
   }).slice(0, 1);

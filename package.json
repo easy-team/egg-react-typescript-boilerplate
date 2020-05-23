@@ -1,15 +1,15 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "4.1.2",
+  "version": "4.1.5",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "dev": "egg-bin dev -r egg-ts-helper/register",
     "debug": "egg-bin debug",
-    "build": "easy build",
+    "build": "npm run tsc && easy build",
     "start": "egg-scripts start --port 7001 --workers 4",
     "backend": "nohup egg-scripts start --port 7001 --workers 4 &",
     "tsc": "ets && tsc -p tsconfig.json",
-    "clean": "ets clean",
+    "clean": "ets clean && easy clean",
     "kill": "easy kill",
     "lint": "tslint --project . -c tslint.json",
     "fix": "tslint --fix --project . -c tslint.json",
@@ -22,13 +22,13 @@
     }
   },
   "lint-staged": {
-    "app/**/*.ts,tsx" : [
+    "app/**/*.ts,tsx": [
       "tslint .",
       "git add"
     ]
   },
   "dependencies": {
-    "@hubcarl/json-typescript-mapper": "2.0.0",
+    "@hubcarl/json-typescript-mapper": "^2.0.1",
     "axios": "^0.19.2",
     "cross-env": "^5.0.0",
     "egg": "^2.1.0",
@@ -72,10 +72,10 @@
     "eslint-config-egg": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.2",
     "ip": "^1.1.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
+    "lint-staged": "^10.2.2",
     "ts-loader": "^4.0.0",
     "tslint": "^5.9.1",
     "tslint-loader": "^3.5.3",

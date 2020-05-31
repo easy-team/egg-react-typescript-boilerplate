@@ -22,7 +22,8 @@
     "./typings/global.d.ts"
   ],
   "include": [
-    "./page/**/**.tsx", "page/antd/store/config.ts",
+    "./**/**.tsx", 
+    "./**/**.ts", 
   ],
   "exclude": [
     "node_modules",

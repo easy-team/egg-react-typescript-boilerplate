@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@hubcarl/json-typescript-mapper": "^2.0.1",
+    "@types/webpack-env": "^1.15.2",
     "axios": "^0.19.2",
     "cross-env": "^5.0.0",
     "egg": "^2.1.0",

@@ -1,18 +1,18 @@
 import { CSSProperties } from 'react';
-import { observable, action } from 'mobx';
+import { observable } from 'mobx';
 class ConfigStore {
   // 定义状态并使其可观察
   @observable size = 2;
-  @observable themeStyle: CSSProperties ={
+  @observable themeStyle: CSSProperties = {
     backgroundColor: '#red',
-    fontSize: `${this.size}px`
-  }
+    fontSize: `${this.size}px`,
+  };
 
-  changeTheme(){
+  changeTheme() {
     this.themeStyle = {
       ...this.themeStyle,
-      fontSize: `${this.size++}px`
-    }
+      fontSize: `${this.size++}px`,
+    };
   }
 }
 export default ConfigStore;

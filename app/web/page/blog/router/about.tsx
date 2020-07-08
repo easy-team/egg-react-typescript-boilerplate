@@ -5,17 +5,17 @@ import { hot } from 'react-hot-loader/root'
 class About extends Component {
 
   render() {
-    const styleTitle = {
+    const styleTitle: any = {
       marginTop: '40px', marginBottom: '40px', textAlign: 'center'
     };
-    const styleSub = {
+    const styleSub: any = {
       marginBottom: '40px', textAlign: 'center', color: '444444'
     };
     return <div>
       <h2 style={{...styleTitle}}>Egg React Server Side Render</h2>
       <h4 style={{...styleSub}}><a href="https://github.com/easy-team/egg-react">https://github.com/easy-team/egg-react</a></h4>
-      <h4 style={{...styleSub}}><a href="https://yuque.com/easy-team/egg-react">https://easyjs/egg-react</a></h4>
-      <h4 style={{...styleSub}}><a href="https://easyjs/egg-react">https://easyjs/egg-react</a></h4>
+      <h4 style={{...styleSub}}><a href="https://yuque.com/easy-team/egg-react">https://yuque.com/easy-team/egg-react</a></h4>
+      <h4 style={{...styleSub}}><a href="https://easyjs.cn/egg-react">https://easyjs.cn/egg-react</a></h4>
     </div>;
   }
 }

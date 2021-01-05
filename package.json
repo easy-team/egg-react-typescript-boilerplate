@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@hubcarl/json-typescript-mapper": "^2.0.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cross-env": "^5.0.0",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",

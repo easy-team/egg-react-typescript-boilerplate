@@ -13,7 +13,7 @@
     "kill": "easy kill",
     "lint": "tslint --project . -c tslint.json",
     "fix": "tslint --fix --project . -c tslint.json",
-    "yarn": "yarn --registry https://registry.npm.taobao.org",
+    "yarn": "yarn --registry https://registry.npmmirror.com",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md  -s -r 0"
   },
   "husky": {

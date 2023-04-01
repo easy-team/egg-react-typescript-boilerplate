@@ -1,6 +1,6 @@
 {
   "name": "egg-react-typescript-boilerplate",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "基于 egg + react + typescript + webpack 服务端渲染工程骨架项目",
   "scripts": {
     "dev": "egg-bin dev -r egg-ts-helper/register",
@@ -30,6 +30,7 @@
   "dependencies": {
     "@hubcarl/json-typescript-mapper": "^2.0.1",
     "axios": "^0.21.1",
+    "conventional-changelog-cli": "^1.3.5",
     "cross-env": "^7.0.3",
     "egg": "^2.1.0",
     "egg-cors": "^2.0.0",

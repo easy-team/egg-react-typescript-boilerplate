@@ -1,5 +1,6 @@
 import { EggAppConfig } from 'egg';
 import * as path from 'path';
+import { getWebpackConfig } from 'easywebpack-react'
 
 export default (app: EggAppConfig) => {
   const config: any = {};
@@ -19,6 +20,11 @@ export default (app: EggAppConfig) => {
 
   config.logview = {
     dir: path.join(app.baseDir, 'logs')
+  };
+
+  config.webpack = {
+    browser: true,
+    webpackConfigList: getWebpackConfig()
   };
 
   return config;

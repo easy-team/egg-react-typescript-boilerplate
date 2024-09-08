@@ -62,7 +62,7 @@
     "@types/react-dom": "^17.0.1",
     "antd": "^4.12.3",
     "autod-egg": "^1.0.0",
-    "easywebpack-cli": "^5.0.0",
+    "easywebpack-cli": "^5.2.0",
     "easywebpack-react": "^5.0.1",
     "egg-bin": "^4.7.1",
     "egg-ts-helper": "^1.9.0",
